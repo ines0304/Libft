@@ -1,11 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/31 15:47:29 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/02 15:36:09 by insantia         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-__SIZE_TYPE__ ft_strlcat(char *dst, const char *src, __SIZE_TYPE__ size)
+size_t	ft_strlcat(char *dst, const char *src, size_t )
 {
-    __SIZE_TYPE__ dst_len;
-    __SIZE_TYPE__ src_len;
-    __SIZE_TYPE__ i;
+    size_t	dst_len;
+    size_t	src_len;
+    size_t	i;
     
 
     dst_len = 0;
