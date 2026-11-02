@@ -32,5 +32,9 @@ int main(void)
     const char  str2[] = "jjjjjjjjhello";
 
     printf("%s", ft_strnstr(str1, str2, 3));
+    printf("%s", ft_strnstr(str1, str2, 3));
+    printf("%s", ft_strnstr(str1, str2, 3));
+    printf("%s", ft_strnstr(str1, str2, 3));
+    printf("%s", ft_strnstr(str1, str2, 3));
     return (0);
 }
