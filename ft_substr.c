@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:56:48 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/03 15:51:22 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:09:21 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 int	main(void)
 {
-	char const	s[] = "Hello world";
+	char	s[] = "Hello world";
 	char		*str;
 
-	str = ft_substr(s, 6, 20);
+	str = ft_substr(s, 11, 3);
 	printf("%s\n", str);
 	free(str);
 	return (0);
