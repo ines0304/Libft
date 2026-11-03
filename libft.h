@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:16:00 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/03 10:46:28 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:55:57 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@ void    *ft_memchr(const void *s, int c, size_t n);
 int 	ft_memcmp(const void *s1, const void *s2, size_t n);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
 #endif
