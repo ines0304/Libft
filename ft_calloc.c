@@ -6,24 +6,42 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 19:06:12 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/02 19:54:05 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/03 10:45:31 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*calloc(size_t nmemb, size_t size)
+#include "libft.h"
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*ptr;
 	size_t			i;
 
-	ptr = (unsigned char*)malloc(nmemb*size);
-	if (ptr == NULL)
-		return (1);
+	if (size != 0 && nmemb > (SIZE_MAX / size))
+		return (NULL);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	while (ptr[i] != '\0')
-	{
-		ptr[i] = '0';
-		i++;
-	}
-	
+	ptr = (unsigned char*)malloc(nmemb*size);
+	if (ptr == NULL)
+		return (NULL);
+	ft_bzero(ptr, nmemb*size);
+	return (ptr);
 }
+
+/*
+int main()
+{
+	int	num = 10;
+	int *ptr = calloc(num, sizeof(int));
+
+	for(int i = 0; i < num; i++) 
+	{
+		ptr[i] = i + 1;
+		printf("%d ", ptr[i]);
+	}
+
+	free(ptr);
+	ptr = NULL;
+
+	return 0;
+}
+*/

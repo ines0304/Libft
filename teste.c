@@ -3,6 +3,6 @@
 
 int	main(void)
 {
-	printf("%d", atoi("    123ggg"));
+	printf("%", calloc(1000000000000000000, 1000));
 	return(0);
 }

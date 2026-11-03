@@ -1,0 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/03 10:47:43 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/03 12:13:39 by insantia         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+char	*ft_strdup(const char *s)
+{
+	char	*str;
+	size_t	i;
+	size_t	s_len;
+
+	s_len = ft_strlen(s);
+	str = malloc((s_len + 1)*sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	ft_strlcpy(str, s, (s_len));
+	str[s_len + 1] = '\0';
+	return (str);
+}
+
+// int	main(void)
+// {
+// 	const char	*s = "Hello my name is ines";
+// 	char	*str;
+
+// 	str = ft_strdup(s);
+// 	printf("%s", str);
+// 	free(str);
+// 	return (0);
+// }

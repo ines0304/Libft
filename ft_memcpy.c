@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 14:24:59 by insantia          #+#    #+#             */
-/*   Updated: 2026/10/29 15:49:22 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:10:15 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*ptr2;
 	size_t			i;
 
-	ptr1 = (const unsigned char *)src;
+	ptr1 = (unsigned char *)src;
 	ptr2 = (unsigned char *)dest;
 	i = 0;
 	if (!src || !dest)
