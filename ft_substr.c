@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:56:48 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/03 18:09:21 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:00:48 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[j] = '\0';
 	return (str);
 }
-
+/*
 int	main(void)
 {
 	char	s[] = "Hello world";
@@ -49,3 +49,4 @@ int	main(void)
 	free(str);
 	return (0);
 }
+*/
