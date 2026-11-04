@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 15:39:17 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/04 18:09:33 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:46:14 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	s1_len = ft_strlen(s1);
 	i = 0;
+	if (!s1 || !set)
+		return (NULL);
 	while (s1[i] != '\0')
 	{
 		if (is_equal(set, s1[i]) == 0)
@@ -62,4 +64,4 @@ int	main(void)
 	free(str);
 	return (0);
 }
-*/
+/*
