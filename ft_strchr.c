@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:50:06 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/02 15:50:10 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/05 16:54:28 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char    *ft_strchr(const char *s, int c)
 {
     unsigned char    letter;
-    int i;
+    // int i;
 
     letter = (unsigned char)c;
     i = 0;
@@ -31,7 +31,7 @@ char    *ft_strchr(const char *s, int c)
         return ((char *)&s[i]);
     return (NULL);
 }
-
+/*
 int main(void)
 {
     char  s[] = "Hello";
@@ -40,3 +40,4 @@ int main(void)
     printf("%s", strchr(s, 'H'));
     return (0);
 }
+*/

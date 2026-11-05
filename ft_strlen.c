@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 20:10:20 by insantia          #+#    #+#             */
-/*   Updated: 2026/10/31 15:18:12 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/05 15:01:02 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,12 @@ size_t	ft_strlen(const char *str)
 	}
 	return (i);
 }
-
 /*
 int	main(void)
 {
-	const char str[] = "Hello";
+	const char str[] = "\0";
 	
-	printf("%d", ft_strlen(str));
+	printf("%zu\n", ft_strlen(str));
 	return (0);
 }
 */
