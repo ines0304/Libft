@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 18:11:30 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/04 18:58:36 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/05 12:51:52 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,61 +25,110 @@ static int	count_words(char const *s, char c)
 			count++;
 		i++;
 	}
-	return (count);
+	return (count + 1);
 }
 
-static int	is_equal(char *str, char j)
+static int	count_letters(char const *s, char c, int word)
 {
+	static int	count;
 	static int	i;
+	static int	start;
 
 	i = 0;
-	while (set[i] != '\0')
+	count = 0;
+	while (s[i] != '\0')
 	{
-		if (set[i] != j)
-			return (1);
-		i++;
+		if (s[i] != c)
+		{
+			count++;
+			start = i;
+			while (s[i] != '\0' && s[i] != c)
+				i++;
+			if (count == word)
+				return ((i - start));
+		}
+		else
+			i++;
 	}
 	return (0);
 }
 
-static char	*copy(char	*dest, char *src, int i)
+static int	ft_first_position(char const *s, char c, int word)
 {
-	//se nao der espaço na pricipal, posso logo fazer o malloc aqui
-	static int	j;
+	static int	count;
+	static int	i;
 
-	j = 0;
-	while (src[j] != '\0' && j < i)
+	i = 0;
+	count = 0;
+	while (s[i] != '\0')
 	{
-		dest[j] = src[j];
-		j++;
+		if (s[i] != c)
+		{
+			count++;
+			if (count == word)
+				return (i);
+			while (s[i] != '\0' && s[i] != c)
+				i++;
+		}
+		else
+			i++;
 	}
-	dest[j] = '\0';
-	return (dest);
+	return (0);
+}
+
+static void	free_split(char **ptr, int words)
+{
+	int	i;
+
+	i = 0;
+	while (i < words)
+	{
+		free(ptr[i]);
+		i++;
+	}
+	free(ptr);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**vtr;
+	char	**ptr;
 	int		i;
+	int		words;
 
-	vtr = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (vtr == NULL)
+	words = count_words(s, c);
+	ptr = malloc((words + 1) * sizeof(char *));
+	if (ptr == NULL)
 		return (NULL);
 	i = 0;
-	while (s[i] != '\0')
+	while (words > i)
 	{
-		if (is_equal(s, s[i]) == 0)
-			break ;
-		ft_split(&s[i + 1], c)
+		ptr[i] = malloc(count_letters(s, c, i + 1) * sizeof(char));
+		if (ptr[i] == NULL)
+		{
+			free_split(ptr, words);
+			return (NULL);
+		}
+		ptr[i] = ft_substr(s, ft_first_position(s, c, i + 1),
+				count_letters(s, c, i + 1));
 		i++;
-		//posso so ir copiando enquanto nao for igualm, quando for igua damos break chamamos recursiva a comecar na proxima casa
-		// a pergunat é, comom é que vamos guardando as palavras ? precisamos de ter o double pointer ja com a memoria alocada e ir escrevendo em cada posicao
-		// ou seja quando chegarmos à proxima posição temos que incrementar a posição do double pointer tambem 
-
 	}
-	str = malloc(i);
-	if (str == NULL)
-		return (NULL);
-	copy(str, s, i);
-
+	ptr[i] = NULL;
+	return (ptr);
 }
+/*
+int	main(void)
+{
+	char const	s[] = "Tetse abc ds";
+	char	**s2;
+	int		i;
+
+	i = 0;
+	s2 = ft_split(s, ' ');
+	while(s2[i])
+	{
+		printf("%s\n", s2[i]);
+		i++;
+	}
+	return (0);
+}
+*/

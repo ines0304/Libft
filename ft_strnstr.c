@@ -6,13 +6,12 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:52:39 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/02 15:52:42 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/05 12:12:18 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *str);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
     size_t i;

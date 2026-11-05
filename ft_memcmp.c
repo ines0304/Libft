@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:49:41 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/02 15:49:46 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/05 11:09:05 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     return (0);
 }
 
+/*
 int main(void)
 {
     unsigned char   str1[] = "hello";
@@ -39,3 +40,4 @@ int main(void)
     printf("%d", ft_memcmp(str1, str2, 7));
     return (0);
 }
+*/
