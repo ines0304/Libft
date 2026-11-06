@@ -1,0 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/06 14:15:40 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/06 14:30:43 by insantia         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	unsigned int	i;
+
+	if (!s)
+		return ;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		f(i, &s[i]);
+		i++;
+	}
+}
+/*
+void test_func2(unsigned int i, char *c)
+{
+    if (*c >= 'a' && *c <= 'z')
+        *c = *c - 32;
+}
+
+int main()
+{
+	char str2[] = "ooo";
+    ft_striteri(str2, test_func2);
+	printf("%s", str2);
+}
+*/
