@@ -26,7 +26,7 @@ size_t	ft_strlen(const char *str)
 /*
 int	main(void)
 {
-	const char str[] = "\0";
+	const char str[] = "hello my name is ines";
 	
 	printf("%zu\n", ft_strlen(str));
 	return (0);

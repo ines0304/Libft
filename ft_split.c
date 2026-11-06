@@ -115,6 +115,7 @@ char	**ft_split(char const *s, char c)
 	ptr[i] = NULL;
 	return (ptr);
 }
+
 /*
 int	main(void)
 {
@@ -131,4 +132,4 @@ int	main(void)
 	}
 	return (0);
 }
-*/
+	*/
