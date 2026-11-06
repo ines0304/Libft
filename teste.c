@@ -1,49 +1,51 @@
 #include "libft.h"
 
-static int	count_letters(char const *s, char c, int word)
+static int	get_digits(int n)
 {
-	static int	count;
-	static int	i;
-	static int	start;
+	int	digits;
+	int	copia;
 
-	i = 0;
-	count = 0;
-	while (s[i] != '\0')
+	copia = n;
+	digits = 0;
+	if (copia <= 0)
+		digits++;
+	while (copia)
 	{
-		if (s[i] != c)
-		{
-			count++;
-			start = i;
-			while(s[i] != 0 && s[i] != c)
-				i++;
-			if (count == word)
-				return (i - start + 1);
-		}
-		else 
-			i++;
+		copia /= 10;
+		digits++;
 	}
-	return (0);
+	return (digits);
 }
 
-static char	*copy(char	*dest, char *src, int i)
+char	*ft_itoa(int n)
 {
-	//se nao der espaço na pricipal, posso logo fazer o malloc aqui
-	static int	j;
+	int		digits;
+	long	copia;
+	char	*numero;
 
-	j = 0;
-	while (src[j] != '\0' && j < i)
+	digits = get_digits(n);
+	copia = n;
+	numero = malloc(sizeof(char) * digits + 1);
+	if (! numero)
+		return (NULL);
+	numero[digits] = '\0';
+	if (copia < 0)
 	{
-		dest[j] = src[j];
-		j++;
+		copia = -copia;
+		numero[0] = '-';
 	}
-	dest[j] = '\0';
-	return (dest);
+	if (copia == 0)
+		numero[0] = '0';
+	while (copia)
+	{
+		numero[--digits] = (copia % 10) + '0';
+		copia /= 10;
+	}
+	return (numero);
 }
-int	main(void)
-{
-	char	dest[8];
-	char	src[] = "  Hello  kkk  , ss"
 
-	printf("%d", count_letters(s, ' ', 1));
-	return(0);
+int main()
+{
+	char	*num	= ft_itoa(0);
+	printf("%s", num);
 }
