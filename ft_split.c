@@ -53,7 +53,7 @@ static int	count_letters(char const *s, char c, int word)
 	return (0);
 }
 
-static int	ft_first_position(char const *s, char c, int word)
+static int	first_position(char const *s, char c, int word)
 {
 	static int	count;
 	static int	i;
@@ -108,7 +108,7 @@ char	**ft_split(char const *s, char c)
 			free_split(ptr, words);
 			return (NULL);
 		}
-		ptr[i] = ft_substr(s, ft_first_position(s, c, i + 1),
+		ptr[i] = ft_substr(s, first_position(s, c, i + 1),
 				count_letters(s, c, i + 1));
 		i++;
 	}
@@ -119,7 +119,7 @@ char	**ft_split(char const *s, char c)
 /*
 int	main(void)
 {
-	char const	s[] = "Tetse abc ds";
+	char const	s[] = "Teste abc ds";
 	char	**s2;
 	int		i;
 
@@ -132,4 +132,4 @@ int	main(void)
 	}
 	return (0);
 }
-	*/
+*/
