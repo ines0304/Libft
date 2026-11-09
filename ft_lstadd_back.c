@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-08 12:23:50 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-08 12:23:50 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/08 12:23:50 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/09 09:41:10 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	}
 	last = ft_lstlast(*lst);
-	last ->next = new;
+	last->next = new;
 }
 
 /*

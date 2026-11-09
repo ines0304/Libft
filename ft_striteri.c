@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 14:15:40 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/06 14:30:43 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:40:18 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
-	if (!s)
+	if (!s || !f)
 		return ;
 	i = 0;
 	while (s[i] != '\0')

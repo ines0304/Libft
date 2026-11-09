@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 14:31:14 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/05 11:05:42 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/09 17:08:26 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	ptr = (unsigned char *)dest;
 	ptr2 = (const unsigned char *)src;
-	if (!dest && !src)
+	if (!dest || !src)
 		return (NULL);
 	if (ptr > ptr2)
 	{
