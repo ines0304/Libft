@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 19:06:12 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/10 11:05:56 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 12:00:10 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = (unsigned char *) malloc(nmemb * size);
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
 	ft_bzero(ptr, nmemb * size);

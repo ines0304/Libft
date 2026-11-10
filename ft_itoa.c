@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 15:06:24 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/06 11:42:51 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 12:03:50 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	count(long int n)
 {
-	static int	count;
+	int	count;
 
 	count = 1;
 	if (n < 0)

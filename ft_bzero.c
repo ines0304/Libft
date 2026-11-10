@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 10:20:29 by insantia          #+#    #+#             */
-/*   Updated: 2026/10/29 15:35:37 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:48:55 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-
 /*
 int	main(void)
 {
@@ -34,7 +33,7 @@ int	main(void)
 	i = 0;
 	while (str[i] == '\0')
 	{
-		printf("%s ", "\\0");
+		printf("%c ", str[i]);
 		i++;
 	}
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:03:43 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/10 11:04:13 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:44:42 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_atoi(const char *nptr)
 	if (nptr[i] == '+' || nptr[i] == '-')
 	{
 		if (nptr[i] == '-')
-			size = -size;
+			size = -1;
 		i++;
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
