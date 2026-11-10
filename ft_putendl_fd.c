@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 14:50:27 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/09 16:41:51 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:08:56 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	ft_putendl_fd(char *s, int fd)
 		i++;
 	}
 	write(fd, "\n", 1);
-
 }
 /*
 int	main(void)

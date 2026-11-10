@@ -6,23 +6,22 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:53:28 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/02 15:53:31 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:00:09 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    unsigned char   letter;
+	unsigned char	letter;
 
-    letter = (unsigned char)c;
-
-    if (letter >= 'A' && letter <= 'Z')
-    {
-        letter = letter + 32;
-    }
-    return (letter);
+	letter = (unsigned char)c;
+	if (letter >= 'A' && letter <= 'Z')
+	{
+		letter = letter + 32;
+	}
+	return (letter);
 }
 /*
 int main(void)

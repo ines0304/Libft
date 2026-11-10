@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 11:44:21 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/09 16:39:53 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:08:29 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	len_s = ft_strlen(s);
 	str = malloc(len_s * sizeof(char) + 1);
-	if(str == NULL)
+	if (str == NULL)
 		return (NULL);
 	i = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		str[i] = f(i, s[i]);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 15:39:17 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/09 16:42:05 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:07:17 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	is_equal(char const *set, char j)
 {
-	static int	i;
+	int	i;
 
 	i = 0;
 	while (set[i] != '\0')
@@ -64,4 +64,4 @@ int	main(void)
 	free(str);
 	return (0);
 }
-/*
+*/

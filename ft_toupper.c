@@ -6,23 +6,22 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:53:40 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/02 15:53:49 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:01:08 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    unsigned char   letter;
+	unsigned char	letter;
 
-    letter = (unsigned char)c;
-
-    if (letter >= 'a' && letter <= 'z')
-    {
-        letter = letter - 32;
-    }
-    return (letter);
+	letter = (unsigned char)c;
+	if (letter >= 'a' && letter <= 'z')
+	{
+		letter = letter - 32;
+	}
+	return (letter);
 }
 
 /*

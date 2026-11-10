@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 20:50:48 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/09 18:48:11 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:10:24 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void	ft_lstclear(t_list **lst, void (*del) (void *))
 {
 	t_list	*next_prov;
-	
+
 	if (!lst || !del)
 		return ;
 	while (*lst != NULL)
 	{
-		next_prov = (*lst) ->next;
-		del((*lst) ->content);
+		next_prov = (*lst)->next;
+		del((*lst)->content);
 		free(*lst);
 		*lst = next_prov;
 	}
