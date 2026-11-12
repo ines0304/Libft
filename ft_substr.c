@@ -17,25 +17,24 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char			*str;
 	size_t			i;
 	size_t			s_len;
-	size_t			j;
 
 	if (!s)
 		return (NULL);
 	s_len = ft_strlen(s);
 	if (start >= s_len)
-		return ("");
+		len = 0;
+	else if (len > s_len - start)
+		len = s_len - start;
 	str = malloc(len + 1);
 	if (str == NULL)
 		return (NULL);
-	i = start;
-	j = 0;
-	while (s[i] != '\0' && i < (start + len))
+	i = 0;
+	while (i < len)
 	{
-		str[j] = s[i];
+		str[i] = s[start + i];
 		i++;
-		j++;
 	}
-	str[j] = '\0';
+	str[i] = '\0';
 	return (str);
 }
 /*
@@ -44,7 +43,7 @@ int	main(void)
 	char	s[] = "Hello world";
 	char		*str;
 
-	str = ft_substr(s, 11, 3);
+	str = ft_substr(s, 0, 3);
 	printf("%s\n", str);
 	free(str);
 	return (0);

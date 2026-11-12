@@ -15,13 +15,10 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	unsigned char	letter;
-	int				i;
 	int				len_s;
 
 	letter = (unsigned char)c;
-	len_s = 0;
-	while ((unsigned char)s[len_s] != '\0')
-		len_s++;
+	len_s = ft_strlen(s);
 	while (len_s > 0)
 	{
 		if ((unsigned char)s[len_s] == letter)
@@ -37,7 +34,7 @@ char	*ft_strrchr(const char *s, int c)
 /*
 int main(void)
 {
-    const char  s[] = "hello";
+    const char  s[] = "";
 
     printf("%s\n", ft_strrchr(s, 'p'));
     printf("%s", strrchr(s, 'l'));

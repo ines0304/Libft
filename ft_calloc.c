@@ -40,7 +40,6 @@ int main()
 	}
 
 	free(ptr);
-	ptr = NULL;
 
 	return 0;
 }

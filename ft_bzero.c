@@ -16,6 +16,8 @@ void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*str;
 
+	if (!s)
+		return ;
 	str = (unsigned char *)s;
 	while (n > 0)
 	{
@@ -23,13 +25,14 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
+
 /*
 int	main(void)
 {
-	unsigned char	str[4] = "Hell";
+	unsigned char	str[] = "Heloooooooool";
 	int	i;
 
-	ft_bzero(str, 7);
+	ft_bzero(str, 3);
 	i = 0;
 	while (str[i] == '\0')
 	{
