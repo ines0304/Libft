@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 14:32:43 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/06 14:42:13 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/12 18:58:02 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd < 0)
+		return ;
 	write(fd, &c, 1);
 }
 /*
 int	main(void)
 {
 	ft_putchar_fd('a', -5);
+	printf("hello world\n");	
 }
 */
