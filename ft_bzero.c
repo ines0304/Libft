@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 10:20:29 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/10 11:48:55 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/12 09:58:17 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*str;
 
-	if (!s)
-		return ;
 	str = (unsigned char *)s;
 	while (n > 0)
 	{

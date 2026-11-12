@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:50:06 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/10 10:49:50 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:30:49 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strchr(const char *s, int c)
 		}
 		i++;
 	}
-	if ((unsigned char)s[i] == '\0')
+	if (letter == '\0')
 		return ((char *)&s[i]);
 	return (NULL);
 }

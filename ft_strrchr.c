@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 15:53:01 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/10 10:57:59 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:33:46 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	letter = (unsigned char)c;
 	len_s = ft_strlen(s);
-	while (len_s > 0)
+	while (len_s >= 0)
 	{
 		if ((unsigned char)s[len_s] == letter)
 		{
@@ -27,8 +27,6 @@ char	*ft_strrchr(const char *s, int c)
 		}
 		len_s--;
 	}
-	if (letter == '\0')
-		return ((char *)&s[len_s]);
 	return (NULL);
 }
 /*

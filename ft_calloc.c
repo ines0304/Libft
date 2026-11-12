@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 19:06:12 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/10 12:00:10 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:51:48 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	unsigned char	*ptr;
 
 	if (size != 0 && nmemb > (SIZE_MAX / size))
-		return (NULL);
-	if (nmemb == 0 || size == 0)
 		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)

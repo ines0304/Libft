@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 18:11:30 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/10 12:33:39 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/12 11:09:33 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	count_words(char const *s, char c)
 			count++;
 		i++;
 	}
-	return (count + 1);
+	return (count);
 }
 
 static int	count_letters(char const *s, char c, int word)
@@ -104,14 +104,13 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (words > i)
 	{
-		ptr[i] = malloc(count_letters(s, c, i + 1) * sizeof(char));
-		if (ptr[i] == NULL)
-		{
-			free_split(ptr, words);
-			return (NULL);
-		}
 		ptr[i] = ft_substr(s, first_position(s, c, i + 1),
 				count_letters(s, c, i + 1));
+		if (ptr[i] == NULL)
+		{
+			free_split(ptr, i);
+			return (NULL);
+		}
 		i++;
 	}
 	ptr[i] = NULL;
