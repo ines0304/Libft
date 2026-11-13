@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:28:17 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:28:17 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:28:17 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/13 17:30:34 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

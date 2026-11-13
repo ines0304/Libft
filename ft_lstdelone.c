@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:25:36 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:25:36 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:25:36 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/13 17:15:18 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst == NULL || del == NULL)
 		return ;
-	del(lst ->content);
+	del(lst->content);
 	free(lst);
 }
 
