@@ -6,11 +6,15 @@
 #    By: insantia <insantia@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/10 10:37:47 by insantia          #+#    #+#              #
-#    Updated: 2026/11/12 18:15:01 by insantia         ###   ########.fr        #
+#    Updated: 2026/11/13 12:13:26 by insantia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
+SRCS := srcs/
+
+CFLAGS = -Wall -Werror -Wextra
 
 SRC = ft_atoi.c ft_isalpha.c ft_isprint.c ft_memcpy.c ft_strchr.c ft_strlen.c ft_strrchr.c \
 	ft_bzero.c ft_isascii.c ft_memchr.c ft_memmove.c ft_strlcat.c ft_strncmp.c ft_tolower.c \
@@ -20,30 +24,24 @@ SRC = ft_atoi.c ft_isalpha.c ft_isprint.c ft_memcpy.c ft_strchr.c ft_strlen.c ft
 	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
 	ft_lstclear.c ft_lstiter.c ft_lstmap.c 
 
-OBJ = ${SRC:.c=.o}
-
-CC = cc
-
-CFLAGS = -Wall -Werror -Wextra
-
-LIB = ar -rcs $(NAME)
-
-REMOVE = rm -f
-
+OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
+.c.o:
+	cc $(CFLAGS) -c $< -o $(<:.c=.o)
+
 $(NAME): $(OBJ)
-	$(LIB) $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 clean:
-	@$(REMOVE) $(OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
-	@$(REMOVE) $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: clean fclean re
 
 so:
 	$(CC) -fPIC -shared $(CFLAGS) $(SRC) -o libft.so

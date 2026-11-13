@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 17:03:43 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/12 10:02:36 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/13 12:13:26 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_atoi(const char *nptr)
 /*
 int	main(void)
 {
-	const char	str[] = "    -123abvg";
+	const char	str[] = "    ----123abvg";
 
 	printf("%d", ft_atoi(str));
 	return (0);
