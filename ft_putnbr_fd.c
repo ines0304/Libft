@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/06 14:58:25 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/13 12:13:26 by insantia         ###   ########.fr       */
+/*   Created: 2026-11-13 12:28:03 by insantia          #+#    #+#             */
+/*   Updated: 2026-11-13 12:28:03 by insantia         ###   ########.pt       */
 /*                                                                            */
 /* ************************************************************************** */
 

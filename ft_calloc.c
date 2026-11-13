@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/02 19:06:12 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/13 12:15:03 by insantia         ###   ########.fr       */
+/*   Created: 2026-11-13 12:24:12 by insantia          #+#    #+#             */
+/*   Updated: 2026-11-13 12:24:12 by insantia         ###   ########.pt       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/08 19:30:00 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/13 12:13:26 by insantia         ###   ########.fr       */
+/*   Created: 2026-11-13 12:25:36 by insantia          #+#    #+#             */
+/*   Updated: 2026-11-13 12:25:36 by insantia         ###   ########.pt       */
 /*                                                                            */
 /* ************************************************************************** */
 

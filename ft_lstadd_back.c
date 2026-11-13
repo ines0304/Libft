@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42.fr>          +#+  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/08 12:23:50 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/13 12:13:26 by insantia         ###   ########.fr       */
+/*   Created: 2026-11-13 12:25:03 by insantia          #+#    #+#             */
+/*   Updated: 2026-11-13 12:25:03 by insantia         ###   ########.pt       */
 /*                                                                            */
 /* ************************************************************************** */
 
