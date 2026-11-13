@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:25:56 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:25:56 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:25:56 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/13 16:26:02 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-/*
+
 void	*to_uppercase(void *content)
 {
 	char	*str;
@@ -50,7 +50,7 @@ void	*to_uppercase(void *content)
 	}
 	return (str);
 }
-
+/*
 void	del(void *content)
 {
 	free(content);

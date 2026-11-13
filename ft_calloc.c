@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:24:12 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:24:12 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:24:12 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/13 16:02:59 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, nmemb * size);
 	return (ptr);
 }
-
-int main()
+/*
+int	main(void)
 {
 	int	num = 10;
 	int *ptr = calloc(num, 0);
@@ -48,3 +48,4 @@ int main()
 
 	return 0;
 }
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:25:30 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:25:30 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:25:30 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/13 16:39:05 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
