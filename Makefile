@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: insantia <insantia@student.42.fr>          +#+  +:+       +#+         #
+#    By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/10 10:37:47 by insantia          #+#    #+#              #
-#    Updated: 2026/11/13 12:13:26 by insantia         ###   ########.fr        #
+#    Updated: 2026/11/13 17:14:25 by insantia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 .c.o:
-	cc $(CFLAGS) -c $< -o $(<:.c=.o)
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)

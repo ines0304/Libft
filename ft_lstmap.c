@@ -6,7 +6,7 @@
 /*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 12:25:56 by insantia          #+#    #+#             */
-/*   Updated: 2026/11/13 16:26:02 by insantia         ###   ########.fr       */
+/*   Updated: 2026/11/13 17:16:56 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,22 +34,22 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_list);
 }
 
-void	*to_uppercase(void *content)
-{
-	char	*str;
-	int		i;
+// void	*to_uppercase(void *content)
+// {
+// 	char	*str;
+// 	int		i;
 
-	str = ft_strdup((char *)content);
-	if (str == NULL)
-		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-	{
-		str[i] = ft_toupper(str[i]);
-		i++;
-	}
-	return (str);
-}
+// 	str = ft_strdup((char *)content);
+// 	if (str == NULL)
+// 		return (NULL);
+// 	i = 0;
+// 	while (str[i] != '\0')
+// 	{
+// 		str[i] = ft_toupper(str[i]);
+// 		i++;
+// 	}
+// 	return (str);
+// }
 /*
 void	del(void *content)
 {
