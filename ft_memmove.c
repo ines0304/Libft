@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:27:37 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:27:37 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:27:37 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/14 11:07:53 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	ptr = (unsigned char *)dest;
 	ptr2 = (const unsigned char *)src;
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	if (ptr > ptr2)
 	{

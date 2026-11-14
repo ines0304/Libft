@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:29:52 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:29:52 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:29:52 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/14 11:02:59 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 int	ft_tolower(int c)
 {
-	unsigned char	letter;
-
-	letter = (unsigned char)c;
-	if (letter >= 'A' && letter <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
-		letter = letter + 32;
+		c = c + 32;
 	}
-	return (letter);
+	return (c);
 }
 /*
 int main(void)

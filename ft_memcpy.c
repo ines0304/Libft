@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:27:30 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:27:30 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:27:30 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/14 11:09:14 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	ptr1 = (unsigned char *)src;
 	ptr2 = (unsigned char *)dest;
+	if (!dest && !src)
+		return (NULL);
 	i = 0;
 	while (n != 0)
 	{

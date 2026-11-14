@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:24:25 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:24:25 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:24:25 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/14 10:43:14 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

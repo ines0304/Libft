@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: insantia <insantia@student.42lisboa.com>   #+#  +:+       +#+        */
+/*   By: insantia <insantia@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-11-13 12:30:18 by insantia          #+#    #+#             */
-/*   Updated: 2026-11-13 12:30:18 by insantia         ###   ########.pt       */
+/*   Created: 2026/11/13 12:30:18 by insantia          #+#    #+#             */
+/*   Updated: 2026/11/14 10:51:48 by insantia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <string.h>
 # include <stdint.h>
 
 typedef struct s_list
